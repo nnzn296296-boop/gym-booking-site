@@ -60,40 +60,44 @@ body{
 </section>
 
 <!-- BOOKING CARD -->
-<section class="px-6 pb-20">
+<!-- BOOKING CARD -->
+<div class="max-w-[600px] mx-auto bg-white border rounded-2xl p-8 shadow-sm">
 
-  <div class="max-w-[600px] mx-auto bg-white border rounded-2xl p-8 shadow-sm">
+  <h3 class="text-xl mb-6 font-medium">预约器械</h3>
 
-    <h3 class="text-xl mb-6 font-medium">预约器械</h3>
+  <!-- 公司 -->
+  <input id="company" placeholder="公司名称"
+    class="w-full border p-3 rounded-lg mb-4"/>
 
-    <input id="company" placeholder="公司名称"
-      class="w-full border p-3 rounded-lg mb-4"/>
+  <!-- 姓名 -->
+  <input id="name" placeholder="姓名"
+    class="w-full border p-3 rounded-lg mb-4"/>
 
-    <input id="name" placeholder="姓名"
-      class="w-full border p-3 rounded-lg mb-4"/>
+  <!-- 日期 -->
+  <input id="date" type="date"
+    class="w-full border p-3 rounded-lg mb-4"/>
 
-    <div class="mb-4">
-      <p class="text-sm mb-2">选择器械（可多选）</p>
+  <!-- 时间 -->
+  <input id="time" type="time"
+    class="w-full border p-3 rounded-lg mb-4"/>
 
-      <div class="flex flex-col gap-2 text-sm">
-        <label><input type="checkbox" value="龙门架"/> 龙门架</label>
-        <label><input type="checkbox" value="跑步机"/> 跑步机</label>
-        <label><input type="checkbox" value="瑜伽垫"/> 瑜伽垫</label>
-      </div>
+  <!-- 器械（放最后） -->
+  <div class="mb-6">
+    <p class="text-sm mb-2">选择器械（可多选）</p>
+
+    <div class="flex flex-col gap-2 text-sm">
+      <label><input type="checkbox" value="龙门架"/> 龙门架</label>
+      <label><input type="checkbox" value="跑步机"/> 跑步机</label>
+      <label><input type="checkbox" value="瑜伽垫"/> 瑜伽垫</label>
     </div>
-
-    <input id="date" type="date"
-      class="w-full border p-3 rounded-lg mb-4"/>
-
-    <input id="time" type="time"
-      class="w-full border p-3 rounded-lg mb-6"/>
-
-    <button onclick="submitForm()"
-      class="w-full bg-brand py-3 rounded-lg font-medium">
-      提交预约
-    </button>
-
   </div>
+
+  <button onclick="submitForm()"
+    class="w-full bg-brand py-3 rounded-lg font-medium">
+    提交预约
+  </button>
+
+</div>
 
 </section>
 
