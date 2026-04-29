@@ -60,10 +60,7 @@ body{
 </section>
 
 <!-- BOOKING CARD -->
-<!-- BOOKING CARD -->
 <div class="max-w-[600px] mx-auto bg-white border rounded-2xl p-8 shadow-sm">
-
-  <h3 class="text-xl mb-6 font-medium">预约器械</h3>
 
   <!-- 公司 -->
   <input id="company" placeholder="公司名称"
@@ -79,12 +76,13 @@ body{
 
   <!-- 时间 -->
   <input id="time" type="time"
-    class="w-full border p-3 rounded-lg mb-4"/>
+    class="w-full border p-3 rounded-lg mb-6"/>
 
-  <!-- 器械（放最后） -->
+  <!-- 👇 标题移动到这里 -->
+  <h3 class="text-lg mb-3 font-medium">预约器械</h3>
+
+  <!-- 器械选择 -->
   <div class="mb-6">
-    <p class="text-sm mb-2">选择器械（可多选）</p>
-
     <div class="flex flex-col gap-2 text-sm">
       <label><input type="checkbox" value="龙门架"/> 龙门架</label>
       <label><input type="checkbox" value="跑步机"/> 跑步机</label>
