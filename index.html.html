@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plant Plus 健身房预约</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#B7D432"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-900">
+
+<!-- HEADER -->
+<header class="border-b">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-6">
+    <div class="flex items-center gap-3">
+      <img src="logo.png" alt="Plant Plus Logo" class="h-8"/>
+      <span class="font-semibold">Plant Plus 健身房</span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6 py-16">
+  <div>
+    <h1 class="text-4xl font-semibold leading-tight">
+      更科学的训练<br/>更绿色的生活<span class="text-brand">.</span>
+    </h1>
+    <p class="mt-4 text-gray-500">内部预约制健身空间</p>
+  </div>
+
+  <!-- BOOKING -->
+  <div class="border rounded-2xl p-6 shadow-sm">
+    <h3 class="text-lg mb-4">预约器械</h3>
+
+    <div class="space-y-4">
+
+      <input type="text" placeholder="公司名称" class="w-full border p-3 rounded-lg"/>
+      <input type="text" placeholder="姓名" class="w-full border p-3 rounded-lg"/>
+
+      <div>
+        <p class="mb-2 text-sm">选择器械（可多选）</p>
+        <div class="flex flex-col gap-2">
+          <label><input type="checkbox"/> 龙门架</label>
+          <label><input type="checkbox"/> 跑步机</label>
+          <label><input type="checkbox"/> 瑜伽垫</label>
+        </div>
+      </div>
+
+      <input type="date" class="w-full border p-3 rounded-lg"/>
+      <input type="time" class="w-full border p-3 rounded-lg"/>
+
+      <button onclick="alert('预约成功（演示）')" class="w-full bg-brand py-3 rounded-lg">
+        提交预约
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+  <a href="#rules" class="block border p-6 rounded-xl hover:shadow">
+    健身房运营管理守则（点击查看）
+  </a>
+</section>
+
+<!-- RULES CONTENT -->
+<section id="rules" class="max-w-4xl mx-auto px-6 py-10 text-sm leading-7">
+  <h2 class="text-xl font-semibold mb-4">健身房运营管理守则</h2>
+
+  <p>为营造良好的健身环境，确保器材的高效利用，本健身房执行“全员预约、限时限量”的运营原则。</p>
+
+  <h3 class="mt-4 font-semibold">一、开放与准入</h3>
+  <p>开放时间：周一至周五 09:00-12:00 & 14:00-17:30（法定节假日关闭）<br/>
+  预约制度：需提前12小时预约，入场须登记<br/>
+  人数管控：场内限额4人</p>
+
+  <h3 class="mt-4 font-semibold">二、空间与器材管理</h3>
+  <p>器材归位：使用后复位，严禁摔砸<br/>
+  卫生自律：使用后请擦拭器械<br/>
+  淋浴要求：离场带走私物并关闭设备</p>
+
+  <h3 class="mt-4 font-semibold">三、违规处理</h3>
+  <p>违规暂停预约5天：<br/>
+  1. 未预约入场<br/>
+  2. 未签到<br/>
+  3. 器材未复位</p>
+
+  <h3 class="mt-4 font-semibold">四、安全声明</h3>
+  <p>风险自担，损坏赔偿，财物自理</p>
+
+</section>
+
+</body>
+</html>
